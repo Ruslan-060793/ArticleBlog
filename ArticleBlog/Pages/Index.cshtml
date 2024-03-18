@@ -1,0 +1,592 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <title>Сравнение детской инфраструктуры</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
+  <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
+  <meta name="author" content="Createx Studio">
+
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Theme switcher (color modes) -->
+  <script src="assets/js/theme-switcher.js"></script>
+
+  <!-- Favicon and Touch Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#080032">
+  <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Vendor Styles -->
+  <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css">
+  <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
+  <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+
+  <!-- Main Theme Styles + Bootstrap -->
+  <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+  <link rel="stylesheet" media="screen" href="css/CustomStyles.css">
+    
+  <!-- Page loading scripts -->
+  <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+</head>
+
+
+<!-- Body -->
+<body>
+
+<!-- Page loading spinner -->
+<div class="page-loading active">
+  <div class="page-loading-inner">
+    <div class="page-spinner"></div><span>Loading...</span>
+  </div>
+</div>
+
+
+<!-- Page wrapper for sticky footer -->
+<!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+<main class="page-wrapper">
+
+
+<!-- Navbar -->
+<!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+<header class="header navbar navbar-expand-lg bg-light navbar-sticky">
+  <div class="container px-3">
+    <a href="index.html" class="navbar-brand pe-3">
+      <img src="ring-shape.png" width="47" alt="Silicon">
+      Reseach
+    </a>
+    <div id="navbarNav" class="offcanvas offcanvas-end">
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          <li class="nav-item">
+            <a href="" class="nav-link">Обзоры</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Исследования</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Рекомендации</a>
+          </li>
+          
+          <li class="nav-item">
+            <a href="" class="nav-link">Истории</a>
+          </li>
+        </ul>
+      </div>
+    
+      <div class="offcanvas-header border-top">
+        <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
+          <i class="bx bx-cart fs-4 lh-1 me-1"></i>
+          &nbsp;Buy now
+        </a>
+      </div>
+          
+    </div>
+  
+  <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+    <input type="checkbox" class="form-check-input" id="theme-mode">
+    <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+    <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+  </div>
+  <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">
+    <i class="bx bx-log-in fs-5 lh-1 me-1"></i>
+    &nbsp;Регистрация
+  </a>
+    <!-- !--> 
+    </div>
+
+</header>
+
+
+<!-- Breadcrumb -->
+<nav class="container pt-4 mt-lg-3" aria-label="breadcrumb">
+  <ol class="breadcrumb mb-0">
+    <li class="breadcrumb-item">
+      <a><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+    </li>
+    <li class="breadcrumb-item">
+      <a>Blog</a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">SravnenieDetskojInfrastruktury</li>
+  </ol> 
+</nav>
+
+
+<!-- Post title + Meta  -->
+<section class="container mt-4 pt-lg-2 pb-3">
+  <h1 class="pb-3" style="max-width: 970px;">Сравнение детской инфраструктуры в новых жилых комплексах Москвы</h1>
+  <div class="d-flex flex-md-row flex-column align-items-md-center justify-content-md-between mb-3">
+    <div class="d-flex align-items-center flex-wrap text-muted mb-md-0 mb-4">
+      <div class="fs-xs border-end pe-3 me-3 mb-2">
+        <span class="badge bg-faded-primary text-primary fs-base">Инфраструктура</span>
+      </div>
+      <div class="fs-sm border-end pe-3 me-3 mb-2">12 часов назад</div>
+      <div class="d-flex mb-2">
+        <div class="d-flex align-items-center me-3">
+          <i class="bx bx-like fs-base me-1"></i>
+          <span class="fs-sm">8</span>
+        </div>
+        <div class="d-flex align-items-center me-3">
+          <i class="bx bx-comment fs-base me-1"></i>
+          <span class="fs-sm">4</span>
+        </div>
+        <div class="d-flex align-items-center">
+          <i class="bx bx-share-alt fs-base me-1"></i>
+          <span class="fs-sm">2</span>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center position-relative ps-md-3 pe-lg-5 mb-2">
+      <img src="assets/img/avatar/39.jpg" class="rounded-circle" width="60" alt="Avatar">
+      <div class="ps-3">
+        <h6 class="mb-1">Автор</h6>
+        <a href="#" class="fw-semibold stretched-link">Дмитрий Петров</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Post image (parallax) -->
+<div class="jarallax mb-lg-5 mb-4" data-jarallax data-speed="0.35" style="height: 36.45vw; min-height: 300px;">
+  <div class="jarallax-img" style="background-image: url(photo-1625819300255-a1a2ead01f48.jpg);"></div>
+</div>
+
+
+<!-- Post content + Sharing -->
+<section class="container mb-5 pt-4 pb-2 py-mg-4">
+  <div class="row gy-4">
+
+    <!-- Content -->
+    <div class="col-lg-9">
+      <h3 class="h5 mb-4 pb-2 fw-medium">В последние годы Москва переживает настоящий бум в сфере строительства жилых комплексов, при этом особое внимание уделяется созданию комфортного семейного пространства. Застройщики стремятся учитывать потребности семей с детьми на всех этапах планирования и реализации проектов. Это выражается не только в строительстве детских площадок и спортивных комплексов, но и в обеспечении безопасности, развитии образовательной инфраструктуры и создании зеленых зон для прогулок. Современные жилые комплексы в Москве предлагают широкий спектр услуг и удобств, направленных на улучшение качества жизни семей, от экологически чистых игровых зон до центров раннего развития и частных детских садов. Эта тенденция подчеркивает стремление города адаптироваться к потребностям современных семей, создавая среду, в которой каждый член семьи, от младенца до взрослого, сможет найти что-то для себя.</h3>
+      <p class="mb-4 pb-2">При выборе нового жилья для семьи с детьми, важно учитывать ряд ключевых факторов, которые влияют не только на комфорт проживания, но и на благополучие и развитие ваших малышей. Вот почему при оценке детской инфраструктуры в новостройках Москвы мы выделили пять критически важных аспектов:</p>
+
+      <!-- Video -->
+      <div class="gallery mb-4 pb-2" data-video="true">
+          <img src="cheerful-.jpg">
+      </div>
+      
+      <h4 class="h6">
+        <i class="bx bx-plus-circle me-1 mt-n1 align-middle fs-5 text-primary"></i>
+        Безопасность: Первостепенный приоритет
+      </h4>
+      <p class="mb-4 pb-2"><span class="fst-italic fw-bold">Почему это важно:</span> Безопасное пространство для игр и общения обеспечивает родителям спокойствие и дает детям свободу исследовать мир вокруг без опасений.
+        <br/><span class="fst-italic fw-bold">Причина включения: </span>Ничто не важнее, чем знание, что ваш ребенок находится в безопасности, будь то во время игр на площадке или во время прогулок по территории комплекса.</p>
+      
+      <h4 class="h6">
+              <i class="bx bx-plus-circle me-1 mt-n1 align-middle fs-5 text-primary"></i>
+              Игровые пространства: Для каждого найдется занятие
+      </h4>
+      <p class="mb-4 pb-2">
+        <span class="fst-italic fw-bold">Почему это важно:</span> 
+        Богатый выбор игровых и спортивных площадок, кружков и клубов способствует гармоничному развитию ребенка, открывая двери в мир новых увлечений и дружбы.
+        <br/><span class="fst-italic fw-bold">Причина включения: </span>Разнообразие предложений стимулирует физическое, умственное и творческое развитие детей, помогая им находить и развивать свои таланты и интересы.
+      </p>
+      
+      <h4 class="h6">
+                    <i class="bx bx-plus-circle me-1 mt-n1 align-middle fs-5 text-primary"></i>
+                    Зеленые зоны: Близость к природе
+      </h4>
+      <p class="mb-4 pb-2">
+        <span class="fst-italic fw-bold">Почему это важно:</span>
+        Пространства для прогулок и игр на свежем воздухе способствуют физическому здоровью и психоэмоциональному благополучию детей и взрослых.
+        <br/><span class="fst-italic fw-bold">Причина включения: </span>
+        Время, проведенное на природе, не только способствует физическому здоровью, но и учит детей ценить красоту окружающего мира, развивая в них любовь к природе и ответственность за окружающую среду.
+      </p>
+
+      
+      <h4 class="h6">
+        <i class="bx bx-plus-circle me-1 mt-n1 align-middle fs-5 text-primary"></i>
+        Образовательные и медицинские учреждения: Забота о будущем и здоровье
+      </h4>
+      
+      <p class="mb-4 pb-2">
+        <span class="fst-italic fw-bold">Почему это важно:</span>
+        Близость к качественным образовательным и медицинским учреждениям обеспечивает детям лучшее образование и быстрый доступ к медицинской помощи при необходимости.
+        <br/><span class="fst-italic fw-bold">Причина включения: </span>
+        Этот аспект непосредственно влияет на образовательный потенциал и здоровье ваших детей, что является неотъемлемой частью счастливого детства.
+      </p>
+
+      <div class="mb-4 image-wrapper">
+        <a href="https://www.mr-group.ru/projects/zhk-seliger-siti" target="_blank">
+          <img src="Seliger_1080x607.jpg"/>
+        </a>
+        <div class="overlay"><span class="bg-faded-primary p-1 rounded-4 px-3">Реклама</span></div>
+      </div>
+
+        <h3 class="h5 mb-4 pb-2 fw-medium">Анализ текущих тенденций в области планирования детской инфраструктуры в жилых комплексах Москвы.</h3>
+        <p class="mb-4 pb-2">Современные родители стремятся к более высокому уровню комфорта и удобств для своих детей в жилых комплексах. От застройщиков теперь ожидают не только базовый набор опций, таких как детские и спортивные площадки, зеленые зоны и близость к муниципальным школам или детским садам, но и дополнительные возможности для хобби и развлечений.</p>
+        <p class="mb-4 pb-2">Каждый второй покупатель премиального жилья активно интересуется наличием в жилом комплексе детских садов или школ, а каждый третий обращает внимание на дополнительные возможности для досуга и образования детей (различных хобби, дополнительных курсов и занятий спортом).</p>
+        <p class="mb-4 pb-2">Итак, что же предлагают московские застройщики своим покупателям?</p>
+        <ul>
+          <p>Акцент на образование - больше половины застройщиков дорогостоящего жилья предусматривают наличие детского сада на территории, а почти треть - еще и школы.</p></ul>
+        <p class="mb-4 pb-2">Несмотря на то, что проекты бизнес и премиум класса расположены в районах с богатой и развитой инфраструктурой, все больше застройщиков стремятся разместить школы и детские сады непосредственно на территории ЖК. С одной стороны, это удобно для родителей, так как они экономят время на дорогу и всегда находятся вблизи от своих детей. С другой, такая инфраструктура способствует формированию однородной социальной среды. Дети, учащиеся и играющие во дворе вместе, создают близкие отношения и общаются друг с другом, что способствует развитию дружбы и коммуникации.</p>
+        <ul>
+          <p>Редкая возможность - детские игровые клубы и развивающие центры заявлены всего в 8 жилых комплексах.</p></ul>
+        <p class="mb-4 pb-2">Согласно исследованию платформы "Авито Услуги", более 60% детей в России посещают различные кружки и секции, что подчеркивает востребованность дополнительных возможностей развития детского творческого и спортивного потенциала. У родителей все чаще возникает запрос на дополнительное образование для их детей: кружки, клубы, развивающие занятия, поэтому наличие подобной инфраструктуры на территории ЖК является неоспоримым преимуществом. Однако на данный момент такие возможности представлены менее чем в 25% от общего количества жилых комплексов на рынке.Чаще всего это жилые комплексы, не имеющие детского сада на территории, однако в Москве есть проекты, сочетающие в себе оба вида детской инфраструктуры</p>
+        <ul>
+          <p>Нестандартный подход - тренд на новые возможности творчества и хобби</p></ul>
+        <p class="mb-4 pb-2">На рынке высокобюджетных жилых комплексов пока еще редко встречаются проекты с нестандартной инфраструктурой для детей, направленной на творчество и хобби. В то время как для взрослых обычно предусмотрены разнообразные общественные пространства, инфраструктура для детей остается второстепенной. Однако на первичном рынке премиального жилья все чаще встречаются проекты, которые предлагают разнообразные возможности для развития интересов детей. </p>
+        <ul>
+          <p>Семейный досуг - инфраструктура для совместного времяпрепровождения и создания семейных традиций становится все более востребованной в новых жилых комплексах столицы.</p></ul>
+        <p class="mb-4 pb-2">У работающих родителей не так много времени для общения друг с другом и детьми, поэтому все более важной становится организация качественных сценариев совместного досуга. Cтановятся предпочтительными не просто ворк-аут зоны, а полноценные площадки для совместных игр и занятий футболом, баскетболом или волейболом, ведь подобные ритуалы способствуют созданию ощущения общности и благополучия в семье.</p>
+
+
+        <!-- Quotation -->
+        <h3 class="h5 mb-4 pb-2 fw-medium">Что думают жители различных жилых комплексов о важности детской инфраструктуры</h3>
+        <figure class="position-relative mb-4 ps-4">
+          <span class="position-absolute top-0 start-0 w-3 h-100 bg-primary"></span>
+          <blockquote class="blockquote fw-medium text-dark ps-1 ps-sm-3">
+            <p>Посещение этой детской площадки нашим ребенком стало для нас незабываемым приключением! Специальное детское покрытие делает игры безопасными даже для самых маленьких, а разнообразие аттракционов вроде турников, качелей и песочницы способствует развитию физических и творческих навыков детей. Особенно впечатлил шикарный пруд, окруженный великолепно оборудованной набережной, по которой так приятно гулять всей семьей. Пешеходные зоны идеально подходят для безопасных детских игр и спокойных прогулок, позволяя родителям расслабиться, в то время как дети исследуют окружающее пространство.</p>
+          </blockquote>
+          <figcaption class="d-flex align-items-center pt-3 ps-1 ps-sm-3">
+            <img src="assets/img/avatar/04.jpg" width="48" class="rounded-circle" alt="Jane Cooper">
+            <div class="ps-3">
+              <h6 class="fw-semibold lh-base mb-0">Юлия Синицина</h6>
+              <span class="fs-sm text-muted">снимает квартиру в ЖК Селигер Сити:</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <h2 class="h4">Прогнозы на будущее и как застройщики будут улучшать условия для семейного проживания</h2>
+        <p class="mb-4 pb-2">Взирая на горизонт 2025 года, прогнозы для сферы строительства и развития городской инфраструктуры обещают заметные изменения, особенно в контексте создания улучшенных условий для семейной жизни. С учетом возрастающего внимания к качеству жизни, застройщики стремятся внедрять инновационные подходы в разработку жилых комплексов, акцентируя внимание на устойчивом развитии, зеленых технологиях и интеграции общественных пространств, способствующих социализации и активному образу жизни. Проекты нового поколения будут включать в себя не только удобные и безопасные игровые зоны для детей, но и продуманные решения для работы и отдыха родителей, такие как коворкинги и спортивные комплексы, встроенные непосредственно в жилые кварталы. Особое внимание будет уделено созданию эффективной транспортной доступности и развитию локальной инфраструктуры, что позволит семьям наслаждаться высоким качеством жизни, минимизируя необходимость длительных перемещений. Таким образом, к 2025 году ожидается, что застройщики значительно повысят стандарты жилой среды, делая ее более адаптированной к потребностям и ожиданиям современных семей.</p>
+
+
+        <h2 class="h4">Интересные решения детской инфраструктуры в жилых комплексах</h2>
+
+        <h4 class="h6">
+          <i class="bx bx-plus-circle me-1 mt-n1 align-middle fs-5 text-primary"></i>
+          ЖК Селигер сити
+        </h4>
+        <ul class="mb-4 pb-2 ps-4">
+          <li class="mb-3">Внутри комплекса находится живописный пруд с ухоженной набережной, предназначенной для приятных прогулок.</li>
+          <li class="mb-3">Идеальное место для летнего веселья и развлечений — это фонтаны, созданные специально для ваших детей и вас.</li>
+          <li class="mb-3">Просторная детская игровая зона, оснащенная всем необходимым для активного отдыха и развития детей: в ней есть горки разных размеров и форм, которые подарят малышам радость и волнение от скоростного спуска; турники для развития физической силы и ловкости; качели, обеспечивающие веселье и чувство полета.</li>
+          <li class="mb-3">Многофункциональные спортивные пространства такие как: хоккейная коробка, баскетбольная площадка, скейт-парк, настольный теннис и скалодром, оборудованы согласно высшим стандартам безопасности и предназначены для развития физических навыков и активного отдыха граждан всех возрастов. </li>
+        </ul>
+        <h4 class="h6">
+          <i class="bx bx-plus-circle me-1 mt-n1 align-middle fs-5 text-primary"></i>
+          ЖК Зиларт
+        </h4>
+        <ul class="mb-4 pb-2 ps-4">
+          <li class="mb-3">Доступ в уникальный ландшафтный парк «Тюфелева роща» расположенный в престижном Даниловском районе Москвы.</li>
+          <li class="mb-3">Новая благоустроенная набережная расположена на левом берегу Москвы-реки напротив Новоданиловской набережной</li>
+          <li class="mb-3">Рядом с жилым комплексом открыта школа № 548, а точнее, инновационный образовательный центр на 2500 мест.</li>
+          <li class="mb-3">В квартале Зиларт будет открыт музейно-выставочный центр «Коллекция».</li>
+          <li>Наш комплекс оснащен разнообразными спортивными площадками и профессиональным футбольным полем, предлагая идеальные условия для занятий различными видами спорта и футбольных тренировок.</li>
+        </ul>
+        <h4 class="h6">
+          <i class="bx bx-plus-circle me-1 mt-n1 align-middle fs-5 text-primary"></i>
+          ЖК River Park Кутузовская
+        </h4>
+        <ul class="mb-4 pb-2 ps-4">
+          <li class="mb-3">Продуманная в деталях клубная инфраструктура для всестороннего развития детей: две детских площадки, всесезонный игровой клуб NEMO, спортивная игровая площадка</li>
+          <li class="mb-3">Километры благоустроенной набережной для прогулок</li>
+          <li class="mb-3">Образовательный комплекс включает в себя частную школу на 460 учебных мест и детский сад на 200 мест, обеспечивая высокий уровень образовательных услуг для детей разных возрастных групп. </li>
+          <li class="mb-3">Многофункциональная игровая площадка (волейбол, баскетбол, мини-футбол, большой теннис)</li>
+        </ul>
+
+        <h2 class="h4">Рекомендации для семей, ищущих новое жилье с учетом нужд детей</h2>
+        <p class="mb-4 pb-2">
+          Для семей в Москве, ищущих новое жилье с учетом потребностей детей, важно учитывать несколько ключевых аспектов, подтвержденных исследованиями и статистическими данными. Во-первых, следует обращать внимание на районы с развитой образовательной инфраструктурой. Согласно статистике, более 80% московских семей считают наличие качественных образовательных учреждений одним из главных критериев при выборе жилья. Важность этого критерия подтверждается исследованиями, показывающими прямую связь между доступностью образовательных учреждений и уровнем удовлетворенности жизнью в городе.
+
+          Во-вторых, наличие развитой социальной и игровой инфраструктуры вокруг дома важно для физического и психологического развития ребенка. Опросы показывают, что более 73,8% родителей уделяют внимание наличию парков, спортивных площадок и детских садов в пешей доступности от жилья.
+
+          Также, не менее важным фактором является экологическая обстановка района. Дети, живущие в экологически чистых районах, на 30% реже страдают от респираторных заболеваний. Поэтому при выборе жилья рекомендуется обращать внимание на экологические показатели района, наличие зеленых зон и удаленность от промышленных объектов и крупных магистралей.
+
+          Наконец, учитывая высокую загруженность московских дорог, важно выбирать жилье с хорошей транспортной доступностью, чтобы сократить время на дорогу до школы или дополнительных занятий. Согласно исследованиям, семьи, тратящие меньше времени на перемещение по городу, отмечают выше уровень общего семейного благополучия.
+
+          Следуя этим рекомендациям и опираясь на данные исследований, семьи смогут сделать взвешенный выбор в пользу жилья, которое будет способствовать здоровому и гармоничному развитию их детей в Москве.
+        </p>
+
+      
+        <!-- Tags -->
+        <hr class="mb-4">
+        <div class="d-flex flex-sm-row flex-column pt-2">
+          <h6 class="mt-sm-1 mb-sm-2 mb-3 me-2 text-nowrap">Related Tags:</h6>
+          <div>
+            <a href="#" class="btn btn-sm btn-outline-secondary me-2 mb-2">#недвижимость</a>
+            <a href="#" class="btn btn-sm btn-outline-secondary me-2 mb-2">#дети</a>
+          </div>
+        </div>
+      </div>
+
+    <!-- Sharing -->
+    <div class="col-lg-3 position-relative">
+      <div class="sticky-top ms-xl-5 ms-lg-4 ps-xxl-4" style="top: 105px !important;">
+        <span class="d-block mb-3">10 мин читать</span>
+        <h6>Поделиться этим постом:</h6>
+        <div class="mb-4 pb-lg-3">
+          <a href="#" class="btn btn-icon btn-secondary btn-linkedin me-2 mb-2" aria-label="LinkedIn">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="#" class="btn btn-icon btn-secondary btn-facebook me-2 mb-2" aria-label="Facebook">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="#" class="btn btn-icon btn-secondary btn-twitter me-2 mb-2" aria-label="Twitter">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="#" class="btn btn-icon btn-secondary btn-instagram me-2 mb-2" aria-label="Instagram">
+            <i class="bx bxl-instagram"></i>
+          </a>
+        </div>
+        <div class="mb-4 image-wrapper">
+          <a href="https://www.mr-group.ru/projects/zhk-seliger-siti" target="_blank">
+            <img src="Seliger_300x600_iclicks.gif"/>
+          </a>
+          <div class="overlay">
+            <span class="bg-faded-dark p-1 rounded-4 px-3">Реклама</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Post comments -->
+
+
+<!-- Comment form + Subscription -->
+
+
+<!-- Related articles (Slider below lg breakpoint) -->
+<section class="container mb-5 pt-md-4">
+  <div class="d-flex flex-sm-row flex-column align-items-center justify-content-between mb-4 pb-1 pb-md-3">
+    <h2 class="h1 mb-sm-0">Related Articles</h2>
+    <a href="blog-list-with-sidebar.html" class="btn btn-lg btn-outline-primary ms-4">
+      All posts
+      <i class="bx bx-right-arrow-alt ms-1 me-n1 lh-1 lead"></i>
+    </a>
+  </div>
+
+  <div class="swiper mx-n2" data-swiper-options='{
+          "slidesPerView": 1,
+          "spaceBetween": 8,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "breakpoints": {
+            "500": {
+              "slidesPerView": 2
+            },
+            "1000": {
+              "slidesPerView": 3
+            }
+          }
+        }'>
+    <div class="swiper-wrapper">
+
+      <!-- Item -->
+      <div class="swiper-slide h-auto pb-3">
+        <article class="card border-0 shadow-sm h-100 mx-2">
+          <div class="position-relative">
+            <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+            <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+              <i class="bx bx-bookmark"></i>
+            </a>
+            <img src="assets/img/blog/01.jpg" class="card-img-top" alt="Image">
+          </div>
+          <div class="card-body pb-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Business</a>
+              <span class="fs-sm text-muted">May 19, 2023</span>
+            </div>
+            <h3 class="h5 mb-0">
+              <a href="blog-single.html">5 Bad Landing Page Examples &amp; How We Would Fix Them</a>
+            </h3>
+          </div>
+          <div class="card-footer py-4">
+            <a href="#" class="d-flex align-items-center fw-bold text-dark text-decoration-none">
+              <img src="assets/img/avatar/01.jpg" class="rounded-circle me-3" width="48" alt="Avatar">
+              Jerome Bell
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Item -->
+      <div class="swiper-slide h-auto pb-3">
+        <article class="card border-0 shadow-sm h-100 mx-2">
+          <div class="position-relative">
+            <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+            <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+              <i class="bx bx-bookmark"></i>
+            </a>
+            <img src="assets/img/blog/06.jpg" class="card-img-top" alt="Image">
+          </div>
+          <div class="card-body pb-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Marketing</a>
+              <span class="fs-sm text-muted">Apr 2, 2023</span>
+            </div>
+            <h3 class="h5 mb-0">
+              <a href="blog-single.html">How Agile is Your Forecasting Process?</a>
+            </h3>
+          </div>
+          <div class="card-footer py-4">
+            <a href="#" class="d-flex align-items-center fw-bold text-dark text-decoration-none">
+              <img src="assets/img/avatar/05.jpg" class="rounded-circle me-3" width="48" alt="Avatar">
+              Albert Flores
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Item -->
+      <div class="swiper-slide h-auto pb-3">
+        <article class="card border-0 shadow-sm h-100 mx-2">
+          <div class="position-relative">
+            <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+            <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
+              <i class="bx bx-bookmark"></i>
+            </a>
+            <img src="assets/img/blog/03.jpg" class="card-img-top" alt="Image">
+          </div>
+          <div class="card-body pb-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Business</a>
+              <span class="fs-sm text-muted">Sep 16, 2023</span>
+            </div>
+            <h3 class="h5 mb-0">
+              <a href="blog-single.html">This Week in Search: New Limits and Exciting Features</a>
+            </h3>
+          </div>
+          <div class="card-footer py-4">
+            <a href="#" class="d-flex align-items-center fw-bold text-dark text-decoration-none">
+              <img src="assets/img/avatar/02.jpg" class="rounded-circle me-3" width="48" alt="Avatar">
+              Ralph Edwards
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Pagination (bullets) -->
+    <div class="swiper-pagination position-relative pt-2 pt-sm-3 mt-4"></div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="footer bg-dark border-top border-light pt-5 pb-4 pb-lg-5" data-bs-theme="dark">
+  <div class="container pt-lg-4">
+    <div class="row pb-5">
+      <div class="col-lg-4 col-md-6">
+        <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+          <img src="ring-shape.png" width="47" alt="Silicon">
+          Reseach
+        </div>
+        <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros.</p>
+        <form class="needs-validation" novalidate>
+          <label for="subscr-email" class="form-label">Подпишись на рассылку</label>
+          <div class="input-group">
+            <input type="email" id="subscr-email" class="form-control rounded-start ps-5" placeholder="Ваш email" required>
+            <i class="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+            <div class="invalid-tooltip position-absolute top-100 start-0">Пожалуйста введите корректный email адрес</div>
+            <button type="submit" class="btn btn-primary">Подписаться</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+        <div id="footer-links" class="row">
+          <div class="col-lg-4">
+            <h6 class="mb-2">
+              <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Useful Links</a>
+            </h6>
+            <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+              <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Главная</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Обзоры</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Исследования</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Рекомендации</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Истории</a></li>
+              </ul>
+              <ul class="nav flex-column mb-2 mb-lg-0">
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Terms &amp; Conditions</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-3">
+            <h6 class="mb-2">
+              <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Socials</a>
+            </h6>
+            <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+              <ul class="nav flex-column mb-2 mb-lg-0">
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+            <h6 class="mb-2">Свяжитесь с нами</h6>
+            <a href="mailto:email@example.com" class="fw-medium">info@research.pro</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+      <span class="text-light opacity-50">&copy; Все права принадлежат </span>
+      <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank" rel="noopener">Research Studio</a>
+    </p>
+  </div>
+</footer>
+
+
+<!-- Back to top button -->
+<a href="#top" class="btn-scroll-top" data-scroll>
+  <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+  <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+</a>
+
+
+<!-- Vendor Scripts -->
+<script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+<script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+<script src="assets/vendor/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+<script src="assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
+<script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Main Theme Script -->
+<script src="assets/js/theme.min.js"></script>
+</body>
+</html>
+
+
