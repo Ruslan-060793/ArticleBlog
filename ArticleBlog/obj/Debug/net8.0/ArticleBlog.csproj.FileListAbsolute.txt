@@ -28,3 +28,4 @@
 /Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/obj/Debug/net8.0/ArticleBlog.pdb
 /Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/obj/Debug/net8.0/ArticleBlog.genruntimeconfig.cache
 /Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/obj/Debug/net8.0/ref/ArticleBlog.dll
+/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/obj/Debug/net8.0/ArticleBlog.sourcelink.json

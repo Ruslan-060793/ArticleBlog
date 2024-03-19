@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/Elements/PopupBanner.razor]
+build_metadata.AdditionalFiles.TargetPath = RWxlbWVudHMvUG9wdXBCYW5uZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

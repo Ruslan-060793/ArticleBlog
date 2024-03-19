@@ -17881,6 +17881,14 @@
       "PackagePath": "staticwebassets/cheerful-.jpg"
     },
     {
+      "Id": "/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/wwwroot/copyerid.svg",
+      "PackagePath": "staticwebassets/copyerid.svg"
+    },
+    {
+      "Id": "/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/wwwroot/copylink.svg",
+      "PackagePath": "staticwebassets/copylink.svg"
+    },
+    {
       "Id": "/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/wwwroot/css/CustomStyles.css",
       "PackagePath": "staticwebassets/css/CustomStyles.css"
     },
@@ -17889,8 +17897,24 @@
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
+      "Id": "/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/wwwroot/dots.svg",
+      "PackagePath": "staticwebassets/dots.svg"
+    },
+    {
+      "Id": "/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/wwwroot/error.svg",
+      "PackagePath": "staticwebassets/error.svg"
+    },
+    {
+      "Id": "/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/wwwroot/eyes.svg",
+      "PackagePath": "staticwebassets/eyes.svg"
+    },
+    {
       "Id": "/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/wwwroot/hide.png",
+      "PackagePath": "staticwebassets/hide.png"
     },
     {
       "Id": "/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/wwwroot/js/site.js",
@@ -18125,8 +18149,20 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
+      "Id": "/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/wwwroot/oreklam.svg",
+      "PackagePath": "staticwebassets/oreklam.svg"
+    },
+    {
       "Id": "/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/wwwroot/photo-1625819300255-a1a2ead01f48.jpg",
       "PackagePath": "staticwebassets/photo-1625819300255-a1a2ead01f48.jpg"
+    },
+    {
+      "Id": "/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/wwwroot/ring-shape.png",
+      "PackagePath": "staticwebassets/ring-shape.png"
+    },
+    {
+      "Id": "/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/wwwroot/wireframe-sphere.png",
+      "PackagePath": "staticwebassets/wireframe-sphere.png"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.ArticleBlog.Microsoft.AspNetCore.StaticWebAssets.props",

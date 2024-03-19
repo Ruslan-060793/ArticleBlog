@@ -1,4 +1,5 @@
-﻿@page
+﻿@page "/"
+@using ArticleBlog.Elements
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -113,11 +114,7 @@
           
     </div>
   
-  <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
-    <input type="checkbox" class="form-check-input" id="theme-mode">
-    <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
-    <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
-  </div>
+  
   <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -245,10 +242,35 @@
         <a href="https://www.mr-group.ru/projects/zhk-seliger-siti" target="_blank">
           <img src="Seliger_1080x607.jpg"/>
         </a>
-        <div class="overlay"><span class="bg-faded-primary p-1 rounded-4 px-3">Реклама</span></div>
+        <div class="overlay">
+          <span class="text-white bg-gray p-1 rounded-4 px-2 m-2">Реклама</span>
+          <span class="bg-gray p-1 rounded-4 px-2 m-2 nativeName"><img src="dots.svg"></span>
+          <div class="popup_big_banner" style="display: none ;">
+            <!-- Внутренности попапа -->
+            <div class="popup_big_banner">
+              <div class="popup-header">
+                <span>Рекламное объявление</span>
+                <button class="close-btn">&times;</button>
+              </div>
+              <ul class="popup-menu">
+                <li><span class="bx px-1"><img src="hide.png"></span>Скрыть рекламу</li>
+                <li><span class="bx px-1"><img src="error.svg"></span>Пожаловаться</li>
+                <li><span class="bx px-1"><img src="oreklam.svg"></span><a href="https://ads.vk.com/adv_info?id=AAC6-AGbgWz0QuVyBRw95kok4sC1_COD5dwEW8WybguOU_hDV91eCbTBm0l2qMufl4Nhpvhh3MAhxZppIA0ztIFdEmuowhRlAlbjKrTzEoCGNtTKb_czwV2zFoRcmislQpq1mTpvdQJbijkkMKFuI1EmyU_3hr21nHZWEhEDdBE5LroE2ucgZUkJAAAAxjbfmhHRCDYSF-rlnGDYhw">О рекламодателе</a></li>
+                <li id="copylink" data-clipboard-text="https://www.mr-group.ru/projects/zhk-seliger-siti"><span class="bx px-1"><img src="copylink.svg"></span>Скопировать ссылку</li>
+                <li ><span id="erid" data-clipboard-text="2Vtzqx52prg"><span class="bx px-1"><img src="copyerid.svg"></span>Скопировать ERID</span><br/>
+                  <span class="erid">ERID 2Vtzqx52prg</span>
+                </li>
+
+              </ul>
+              <div class="popup-footer">
+                <button class="why-btn"><a href="https://legal.my.com/us/mytarget/privacy/" target="_blank">Почему я вижу эту рекламу?</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-        <h3 class="h5 mb-4 pb-2 fw-medium">Анализ текущих тенденций в области планирования детской инфраструктуры в жилых комплексах Москвы.</h3>
+      <h3 class="h5 mb-4 pb-2 fw-medium">Анализ текущих тенденций в области планирования детской инфраструктуры в жилых комплексах Москвы.</h3>
         <p class="mb-4 pb-2">Современные родители стремятся к более высокому уровню комфорта и удобств для своих детей в жилых комплексах. От застройщиков теперь ожидают не только базовый набор опций, таких как детские и спортивные площадки, зеленые зоны и близость к муниципальным школам или детским садам, но и дополнительные возможности для хобби и развлечений.</p>
         <p class="mb-4 pb-2">Каждый второй покупатель премиального жилья активно интересуется наличием в жилом комплексе детских садов или школ, а каждый третий обращает внимание на дополнительные возможности для досуга и образования детей (различных хобби, дополнительных курсов и занятий спортом).</p>
         <p class="mb-4 pb-2">Итак, что же предлагают московские застройщики своим покупателям?</p>
@@ -364,13 +386,37 @@
             <i class="bx bxl-instagram"></i>
           </a>
         </div>
+        
         <div class="mb-4 image-wrapper">
           <a href="https://www.mr-group.ru/projects/zhk-seliger-siti" target="_blank">
             <img src="Seliger_300x600_iclicks.gif"/>
           </a>
           <div class="overlay">
-            <span class="bg-faded-dark p-1 rounded-4 px-3">Реклама</span>
-          </div>
+              <span class="text-white bg-gray p-1 rounded-4 px-2 m-2">Реклама</span>
+              <span class="bg-gray p-1 rounded-4 px-2 m-2 sideBarName"><img src="dots.svg"></span>
+              <div class="popup" style="display: none ;">
+                <!-- Внутренности попапа -->
+                <div class="popup">
+                  <div class="popup-header">
+                    <span>Рекламное объявление</span>
+                    <button class="close-btn">&times;</button>
+                  </div>
+                  <ul class="popup-menu">
+                    <li><span class="bx px-1"><img src="hide.png"></span>Скрыть рекламу</li>
+                    <li><span class="bx px-1"><img src="error.svg"></span>Пожаловаться</li>
+                    <li><span class="bx px-1"><img src="oreklam.svg"></span><a href="https://ads.vk.com/adv_info?id=AAC6-AGbgWz0QuVyBRw95kok4sC1_COD5dwEW8WybguOU_hDV91eCbTBm0l2qMufl4Nhpvhh3MAhxZppIA0ztIFdEmuowhRlAlbjKrTzEoCGNtTKb_czwV2zFoRcmislQpq1mTpvdQJbijkkMKFuI1EmyU_3hr21nHZWEhEDdBE5LroE2ucgZUkJAAAAxjbfmhHRCDYSF-rlnGDYhw">О рекламодателе</a></li>
+                    <li id="copylinkSide" data-clipboard-text="https://www.mr-group.ru/projects/zhk-seliger-siti"><span class="bx px-1"><img src="copylink.svg"></span>Скопировать ссылку</li>
+                    <li ><span id="eridSide" data-clipboard-text="2Vtzqx52prg"><span class="bx px-1"><img src="copyerid.svg"></span>Скопировать ERID</span><br/>
+                      <span class="eridSide">ERID 2Vtzqx52prg</span>
+                    </li>
+    
+                  </ul>
+                  <div class="popup-footer">
+                    <button class="why-btn"><a href="https://legal.my.com/us/mytarget/privacy/" target="_blank">Почему я вижу эту рекламу?</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </div>
@@ -382,123 +428,7 @@
 <!-- Comment form + Subscription -->
 
 
-<!-- Related articles (Slider below lg breakpoint) -->
-<section class="container mb-5 pt-md-4">
-  <div class="d-flex flex-sm-row flex-column align-items-center justify-content-between mb-4 pb-1 pb-md-3">
-    <h2 class="h1 mb-sm-0">Related Articles</h2>
-    <a href="blog-list-with-sidebar.html" class="btn btn-lg btn-outline-primary ms-4">
-      All posts
-      <i class="bx bx-right-arrow-alt ms-1 me-n1 lh-1 lead"></i>
-    </a>
-  </div>
 
-  <div class="swiper mx-n2" data-swiper-options='{
-          "slidesPerView": 1,
-          "spaceBetween": 8,
-          "pagination": {
-            "el": ".swiper-pagination",
-            "clickable": true
-          },
-          "breakpoints": {
-            "500": {
-              "slidesPerView": 2
-            },
-            "1000": {
-              "slidesPerView": 3
-            }
-          }
-        }'>
-    <div class="swiper-wrapper">
-
-      <!-- Item -->
-      <div class="swiper-slide h-auto pb-3">
-        <article class="card border-0 shadow-sm h-100 mx-2">
-          <div class="position-relative">
-            <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
-            <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
-              <i class="bx bx-bookmark"></i>
-            </a>
-            <img src="assets/img/blog/01.jpg" class="card-img-top" alt="Image">
-          </div>
-          <div class="card-body pb-4">
-            <div class="d-flex align-items-center justify-content-between mb-3">
-              <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Business</a>
-              <span class="fs-sm text-muted">May 19, 2023</span>
-            </div>
-            <h3 class="h5 mb-0">
-              <a href="blog-single.html">5 Bad Landing Page Examples &amp; How We Would Fix Them</a>
-            </h3>
-          </div>
-          <div class="card-footer py-4">
-            <a href="#" class="d-flex align-items-center fw-bold text-dark text-decoration-none">
-              <img src="assets/img/avatar/01.jpg" class="rounded-circle me-3" width="48" alt="Avatar">
-              Jerome Bell
-            </a>
-          </div>
-        </article>
-      </div>
-
-      <!-- Item -->
-      <div class="swiper-slide h-auto pb-3">
-        <article class="card border-0 shadow-sm h-100 mx-2">
-          <div class="position-relative">
-            <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
-            <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
-              <i class="bx bx-bookmark"></i>
-            </a>
-            <img src="assets/img/blog/06.jpg" class="card-img-top" alt="Image">
-          </div>
-          <div class="card-body pb-4">
-            <div class="d-flex align-items-center justify-content-between mb-3">
-              <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Marketing</a>
-              <span class="fs-sm text-muted">Apr 2, 2023</span>
-            </div>
-            <h3 class="h5 mb-0">
-              <a href="blog-single.html">How Agile is Your Forecasting Process?</a>
-            </h3>
-          </div>
-          <div class="card-footer py-4">
-            <a href="#" class="d-flex align-items-center fw-bold text-dark text-decoration-none">
-              <img src="assets/img/avatar/05.jpg" class="rounded-circle me-3" width="48" alt="Avatar">
-              Albert Flores
-            </a>
-          </div>
-        </article>
-      </div>
-
-      <!-- Item -->
-      <div class="swiper-slide h-auto pb-3">
-        <article class="card border-0 shadow-sm h-100 mx-2">
-          <div class="position-relative">
-            <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
-            <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later" aria-label="Read later">
-              <i class="bx bx-bookmark"></i>
-            </a>
-            <img src="assets/img/blog/03.jpg" class="card-img-top" alt="Image">
-          </div>
-          <div class="card-body pb-4">
-            <div class="d-flex align-items-center justify-content-between mb-3">
-              <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Business</a>
-              <span class="fs-sm text-muted">Sep 16, 2023</span>
-            </div>
-            <h3 class="h5 mb-0">
-              <a href="blog-single.html">This Week in Search: New Limits and Exciting Features</a>
-            </h3>
-          </div>
-          <div class="card-footer py-4">
-            <a href="#" class="d-flex align-items-center fw-bold text-dark text-decoration-none">
-              <img src="assets/img/avatar/02.jpg" class="rounded-circle me-3" width="48" alt="Avatar">
-              Ralph Edwards
-            </a>
-          </div>
-        </article>
-      </div>
-    </div>
-
-    <!-- Pagination (bullets) -->
-    <div class="swiper-pagination position-relative pt-2 pt-sm-3 mt-4"></div>
-  </div>
-</section>
 </main>
 
 <!-- Footer -->
@@ -510,7 +440,6 @@
           <img src="ring-shape.png" width="47" alt="Silicon">
           Reseach
         </div>
-        <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros.</p>
         <form class="needs-validation" novalidate>
           <label for="subscr-email" class="form-label">Подпишись на рассылку</label>
           <div class="input-group">
@@ -535,10 +464,7 @@
                 <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Рекомендации</a></li>
                 <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Истории</a></li>
               </ul>
-              <ul class="nav flex-column mb-2 mb-lg-0">
-                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Terms &amp; Conditions</a></li>
-                <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Privacy Policy</a></li>
-              </ul>
+              
             </div>
           </div>
           <div class="col-xl-4 col-lg-3">
@@ -583,6 +509,102 @@
 <script src="assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
 <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script>
+        // Вставьте вышеуказанный JavaScript код здесь
+        document.addEventListener('DOMContentLoaded', (event) => {
+            
+            // Поиск всплывающего окна с классом 'popup'
+            var popup = document.querySelector('.popup');
+            var popup_big_banner = document.querySelector('.popup_big_banner');
+            
+            var sideBarName = document.querySelector('.sideBarName');
+            
+            var nativeName = document.querySelector('.nativeName');
+            
+            sideBarName.addEventListener('click', function (){
+                console.log("открываем попап")
+                popup.style.display = 'block';
+            });
+            
+            nativeName.addEventListener('click', function (){
+              console.log("открываем попап")
+              popup_big_banner.style.display = 'block';
+            });
+            
+            
+            // Добавление обработчика события клика к кнопке закрытия попапа
+            popup.querySelector('.close-btn').addEventListener('click', function() {
+                // Изменение CSS-свойства 'display' для скрытия попапа
+                popup.style.display = 'none';
+            
+            });
+            
+            popup_big_banner.querySelector('.close-btn').addEventListener('click', function() {
+              // Изменение CSS-свойства 'display' для скрытия попапа
+              popup_big_banner.style.display = 'none';    
+            });
+            
+        });
+        </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    var eridElement = document.getElementById('erid');
+    var eridElementSide = document.getElementById('eridSide');
+    var copyLinkElement = document.getElementById('copylink');
+    var copyLinkElementSide = document.getElementById('copylinkSide');
+
+    eridElement.addEventListener('click', function() {
+        // Копирование ERID в буфер обмена
+        var clipboardText = this.getAttribute('data-clipboard-text');
+        navigator.clipboard.writeText(clipboardText).then(function() {
+            // Успешное копирование текста
+            eridElement.textContent = 'Скопировано';
+        })
+        .catch(function(error) {
+            // Обработка ошибки при копировании текста
+            console.error('Ошибка при копировании текста: ', error);
+        });
+    });
+    
+    copyLinkElement.addEventListener('click', function() {
+            // Копирование ссылки в буфер обмена
+            var clipboardText = this.getAttribute('data-clipboard-text');
+            navigator.clipboard.writeText(clipboardText).then(function() {
+                // Успешное копирование текста
+            })
+            .catch(function(error) {
+                // Обработка ошибки при копировании текста
+                console.error('Ошибка при копировании текста: ', error);
+            });
+        });
+    
+    copyLinkElementSide.addEventListener('click', function() {
+                // Копирование ссылки в буфер обмена
+                var clipboardText = this.getAttribute('data-clipboard-text');
+                navigator.clipboard.writeText(clipboardText).then(function() {
+                    // Успешное копирование текста
+                })
+                .catch(function(error) {
+                    // Обработка ошибки при копировании текста
+                    console.error('Ошибка при копировании текста: ', error);
+                });
+            });
+    
+    eridElementSide.addEventListener('click', function() {
+       // Копирование ссылки в буфер обмена
+       var clipboardText = this.getAttribute('data-clipboard-text');
+       navigator.clipboard.writeText(clipboardText).then(function() {
+           // Успешное копирование текста
+           eridElementSide.textContent = 'Скопировано';
+       })
+       .catch(function(error) {
+           // Обработка ошибки при копировании текста
+           console.error('Ошибка при копировании текста: ', error);
+       });
+   });
+});  
+</script>
 
 <!-- Main Theme Script -->
 <script src="assets/js/theme.min.js"></script>
