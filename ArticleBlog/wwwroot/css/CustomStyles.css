@@ -85,6 +85,7 @@
      width: 100%; /* Опционально, для адаптивности */
      height: auto; /* Опционально, для адаптивности */
  }
+
  .overlay {
      position: absolute;
      top: 0;
@@ -97,10 +98,16 @@
      font-size: 12px; /* Размер шрифта */
      color: black; /* Цвет текста */
      background-color: rgba(0, 0, 0, 0); /* Полностью прозрачный фон */
+     pointer-events: none; /* Важно: позволяет кликам проходить через слой */
  }
 
- 
- 
+ .overlay * {
+     pointer-events: auto; /* Восстанавливает стандартное поведение для подэлементов, если нужно */
+ }
+
+
+
+
 
  .popup-header {
      padding: 10px;
@@ -206,4 +213,8 @@
 
  .bg-gray{
      background: grey;
+ }
+ 
+ .image-click{
+     z-index: 3000;
  }
