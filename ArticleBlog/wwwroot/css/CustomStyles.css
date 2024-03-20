@@ -94,7 +94,7 @@
      height: 100%; /* Размер текста равен размеру изображения */
      display: flex;
      justify-content: space-between; /* Центрирование текста по горизонтали */
-     align-items: baseline; /* Центрирование текста по вертикали */
+     align-items: self-start; /* Центрирование текста по вертикали */
      font-size: 12px; /* Размер шрифта */
      color: black; /* Цвет текста */
      background-color: rgba(0, 0, 0, 0); /* Полностью прозрачный фон */
