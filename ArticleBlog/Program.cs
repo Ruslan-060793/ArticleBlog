@@ -3,6 +3,13 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.WebHost
+    .ConfigureKestrel(serverOptions =>
+    {
+        // Слушать на порту 5000
+        serverOptions.ListenLocalhost(5000); // Только для localhost
+        // или serverOptions.ListenAnyIP(5000); // Для всех IP-адресов
+    });
 
 var app = builder.Build();
 
