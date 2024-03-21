@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets/ArticleBlog.bundle.scp.css"
     },
     {
+      "Id": "/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/wwwroot/1080_607_mr_group_seliger_city_march.jpg",
+      "PackagePath": "staticwebassets/1080_607_mr_group_seliger_city_march.jpg"
+    },
+    {
+      "Id": "/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/wwwroot/480_800_mr_group_seliger_city_march.png",
+      "PackagePath": "staticwebassets/480_800_mr_group_seliger_city_march.png"
+    },
+    {
       "Id": "/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/wwwroot/Seliger_1080x607.jpg",
       "PackagePath": "staticwebassets/Seliger_1080x607.jpg"
     },
