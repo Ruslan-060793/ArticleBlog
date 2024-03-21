@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6ODmxzSzU+GS7GlJE2/UJnMVIYAtELX4e5ncoIF5fzU=",
+  "Hash": "unZLH7YREQGqAxlbtzqDBnYLk5PMqR8u5HII1RMKEYg=",
   "Source": "ArticleBlog",
   "BasePath": "_content/ArticleBlog",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/1080_607_mr_group_seliger_city_march.jpg"
+    },
+    {
+      "Identity": "/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/wwwroot/300_500_mr_group_seliger_city_march1.png",
+      "SourceId": "ArticleBlog",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/wwwroot/",
+      "BasePath": "_content/ArticleBlog",
+      "RelativePath": "300_500_mr_group_seliger_city_march1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/300_500_mr_group_seliger_city_march1.png"
     },
     {
       "Identity": "/Users/ruslanpavlov/RiderProjects/ArticleBlog/ArticleBlog/wwwroot/480_800_mr_group_seliger_city_march.png",
